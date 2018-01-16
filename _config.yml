@@ -3,7 +3,7 @@ title: Ansible Broker
 description: >-
   Welcome to Ansible Broker
 baseurl: ""
-url: "http://ansiblebroker.com"
+url: "http://ansiblebroker.org"
 repo: https://github.com/openshift/ansible-service-broker
 
 # Build settings
