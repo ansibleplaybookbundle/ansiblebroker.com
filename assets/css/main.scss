@@ -1,7 +1,18 @@
 ---
 ---
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('fonts/Montserrat-Light.eot'); /* IE9 Compat Modes */
+  src:  url('fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/Montserrat-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/Montserrat-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/Montserrat-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
 body {
   padding-top: 76px;
+  font-family: Montserrat-Light, Arial, sans-serif;
 }
 
 .navbar {
