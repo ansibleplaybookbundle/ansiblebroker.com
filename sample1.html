@@ -3,20 +3,20 @@ layout: default
 ---
 
 <main role="main">
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container jumbotron-text-container">
             <img class="jumbo-logo" src="{{ site.baseurl }}/assets/img/logo_horiz_black-text.png" alt="">
-            <a class="btn btn-lg home-call-to-action" href="https://github.com/openshift/ansible-service-broker"
+            <a class="btn btn-lg btn-primary" target="_blank"
+               href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker"
                role="button">Get started &raquo;</a>
         </div>
     </div>
     <div class="container">
         <div class="row home-bullet">
-            <div class="col-md-6">
+            <div class="offset-lg-2 col-md-8 col-lg-5">
                 <h3>Ansible Broker one liner dapibus id elit non mi porta gravida at eget metus.</h3>
             </div>
-            <div class="col-md-6 defn-img-container">
+            <div class="col-md-4 col-lg-3 defn-img-container">
                 <img class="defn-img" src="{{ site.baseurl }}/assets/img/logo_vert_black-text.png" alt="">
             </div>
         </div>
@@ -25,12 +25,22 @@ layout: default
                 <img class="bullet-img" src="{{ site.baseurl }}/assets/img/logomark_trans.png" alt="">
             </div>
             <div class="col-md-9 col-lg-10">
-                <h3>Heading</h3>
-                <p> Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="https://github.com/openshift/ansible-service-broker"
-                      role="button">View details &raquo;</a></p>
+                <h3>Getting Started</h3>
+                <p>
+                    As a developer, it's easy to get started using Ansible Broker if you have
+                    <a href="https://www.openshift.org/index.html" target="_blank">OpenShift</a> up and running.
+                </p>
+                <p>
+                    We also offer a collection of Ansible playbooks called <a href="https://github.com/fusor/catasb">catasb</a>
+                    to get you up and running faster with OpenShift or Kubernetes, the Service Catalog, and Ansible
+                    Broker.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker">
+                        Installation &raquo;
+                    </a>
+                </p>
             </div>
         </div>
         <div class="row home-bullet">
@@ -38,11 +48,19 @@ layout: default
                 <img class="bullet-img" src="{{ site.baseurl }}/assets/img/logomark_trans.png" alt="">
             </div>
             <div class="col-md-9 col-lg-10">
-                <h3>Heading</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h3>Development</h3>
+                <p>
+                    Applications are defined using
+                    <a href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle" target="_blank">Ansible
+                        Playbook Bundles (APBs)</a>.
+                    Leverage the power of Ansible to create complex managed services for Kubernetes.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle#documentation">
+                        Ansible Playbook Bundles &raquo;
+                    </a>
+                </p>
             </div>
         </div>
         <div class="row home-bullet">
@@ -50,11 +68,17 @@ layout: default
                 <img class="bullet-img" src="{{ site.baseurl }}/assets/img/logomark_trans.png" alt="">
             </div>
             <div class="col-md-9 col-lg-10">
-                <h3>Heading</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h3>Sample APBs</h3>
+                <p>
+                    There are several sample APBs available. You can use them to deploy services or as a starting point
+                    to create your own.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/ansibleplaybookbundle?utf8=%E2%9C%93&q=-apb">
+                        Examples on Github &raquo;
+                    </a>
+                </p>
             </div>
         </div>
     </div>

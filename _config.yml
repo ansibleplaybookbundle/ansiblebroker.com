@@ -4,20 +4,13 @@ description: >-
   Welcome to Ansible Broker
 #baseurl: ""
 url: "http://ansiblebroker.org"
-repo: https://github.com/openshift/ansible-service-broker
 
 # Build settings
 markdown: kramdown
 #plugins:
+#exclude:
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+#Social
+repo: https://github.com/openshift/ansible-service-broker
+youtube: https://www.youtube.com/channel/UC04eOMIMiV06_RSZPb4OOBw
+twitter: https://twitter.com/openshift

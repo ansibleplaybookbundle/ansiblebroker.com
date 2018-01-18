@@ -10,7 +10,7 @@
 }
 
 
-.home-call-to-action {
+.btn.btn-primary {
   &:hover{
     color: #0093d9;
     background-color: white;
@@ -22,11 +22,22 @@
 }
 
 .defn-img-container {
-  text-align: right;
+  text-align: center;
 }
 
 .home-bullet {
   margin-top: 5em;
+}
+
+.btn.btn-primary-inverse {
+  &:hover{
+    background-color: #0093d9;
+    color: white;
+    border-color: white;
+  }
+  color: #0093d9;
+  background-color: white;
+  border-color: #0093d9;
 }
 
 .bullet-img {
