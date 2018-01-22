@@ -15,4 +15,5 @@ repo: https://github.com/openshift/ansible-service-broker
 youtube: https://www.youtube.com/channel/UC04eOMIMiV06_RSZPb4OOBw/videos
 twitter: https://twitter.com/openshift
 trello: https://trello.com/b/50JhiC5v/ansible-service-broker
+blog: https://blog.openshift.com/category/technologies/service-catalog/
 email_list: https://www.redhat.com/mailman/listinfo/ansible-service-broker
