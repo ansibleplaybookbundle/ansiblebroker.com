@@ -12,6 +12,6 @@ markdown: kramdown
 
 #Social
 repo: https://github.com/openshift/ansible-service-broker
-youtube: https://www.youtube.com/channel/UC04eOMIMiV06_RSZPb4OOBw
+youtube: https://www.youtube.com/channel/UC04eOMIMiV06_RSZPb4OOBw/videos
 twitter: https://twitter.com/openshift
 trello: https://trello.com/b/50JhiC5v/ansible-service-broker
