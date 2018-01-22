@@ -24,6 +24,11 @@ body {
   background-color: #0093d9;
   .nav-link {
     color: #212529;
+    font-weight: bold;
+    font-size: 1.2rem;
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -44,4 +49,26 @@ a {
     color: #00adfc;
 
   }
+}
+
+.btn.btn-primary {
+  &:hover{
+    color: #0093d9;
+    background-color: white;
+    border-color: #0093d9;
+  }
+  background-color: #0093d9;
+  border-color: #0093d9;
+  color: white
+}
+
+.btn.btn-primary-inverse {
+  &:hover{
+    background-color: #0093d9;
+    color: white;
+    border-color: white;
+  }
+  color: #0093d9;
+  background-color: white;
+  border-color: #0093d9;
 }

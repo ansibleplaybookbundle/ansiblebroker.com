@@ -9,17 +9,8 @@
   text-align: center;
 }
 
-
-.btn.btn-primary {
-  &:hover{
-    color: #0093d9;
-    background-color: white;
-    border-color: #0093d9;
-  }
+.btn-getting-started {
   margin-left: 3em;
-  background-color: #0093d9;
-  border-color: #0093d9;
-  color: white
 }
 
 .defn-img-container {
@@ -28,17 +19,6 @@
 
 .home-bullet {
   margin-top: 5em;
-}
-
-.btn.btn-primary-inverse {
-  &:hover{
-    background-color: #0093d9;
-    color: white;
-    border-color: white;
-  }
-  color: #0093d9;
-  background-color: white;
-  border-color: #0093d9;
 }
 
 .bullet-img {
