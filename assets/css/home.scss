@@ -2,10 +2,16 @@
 ---
 
 .jumbotron {
-
+  .jumbo-description {
+    margin-top: 2rem;
+    //margin: 2rem 2rem 2rem 0;
+    strong {
+      font-size: 1.2rem;
+    }
+  }
 }
 
-.jumbotron-text-container {
+.jumbotron-title {
   text-align: center;
 }
 
@@ -17,10 +23,32 @@
   text-align: center;
 }
 
-.home-bullet {
-  margin-top: 5em;
+.divider {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.bullet-img {
-  margin-bottom: 2em;
+.broker-feature-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.broker-feature {
+  margin-bottom: 2rem;
+  h3 {
+    text-align: center;
+  }
+}
+
+.broker-feature.broker-feature-last {
+  text-align: center;
+}
+
+section.broker-info {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
