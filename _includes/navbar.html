@@ -1,16 +1,22 @@
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand mr-auto" href="{{site.url}}/{{ site.baseurl }}" aria-label="AnsibleBroker"><img src="{{ site.baseurl }}/assets/img/logo_horiz_black-text.png" height="50"></a>
-    <!--<a class="navbar-brand mr-0 mr-md-2" href="{{site.url}}/{{ site.baseurl }}" aria-label="AnsibleBroker"><img src="{{ site.baseurl }}/assets/img/logomark_trans.png" height="50"></a>-->
+    <a class="navbar-brand mr-auto d-none d-sm-block" href="{{site.url}}/{{ site.baseurl }}" aria-label="AnsibleBroker"><img src="{{ site.baseurl }}/assets/img/logo_horiz_black-text_white-bg.png" alt="ANSIBLE BROKER"></a>
+    <a class="navbar-brand mr-auto d-sm-none" href="{{site.url}}/{{ site.baseurl }}" aria-label="AnsibleBroker"><img src="{{ site.baseurl }}/assets/img/logo_horiz_black-text_white-bg.png" height="48" alt="ANSIBLE BROKER"></a>
+    <!--<a class="navbar-brand mr-auto d-sm-none" href="{{site.url}}/{{ site.baseurl }}" aria-label="AnsibleBroker"><img src="{{ site.baseurl }}/assets/img/logomark_white-bg.png"></a>-->
 
     <div class="collapse navbar-collapse justify-content-end" id="brokerNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/openshift/ansible-service-broker/blob/master/docs/README.md">Documentation</a>
+                <a class="nav-link" href="{{ site.baseurl }}/news.html">NEWS</a>
             </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/news.html">News</a>
+                <a class="nav-link" href="https://github.com/openshift/ansible-service-broker">CODE</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/feed.xml"><i class="fas fa-rss"></i></a>
             </li>
         </ul>
     </div>

@@ -1,51 +1,66 @@
 ---
 ---
 
+@import "variables";
+
 .jumbotron {
-  text-align: center;
-  .jumbo-logo {
-    padding-right: 56px;
-  }
-  .jumbo-description {
-    margin-top: 30px;
-  }
+  background-color: $broker-primary-color;
+  background-image: url("/assets/img/header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top center;
+  color: white;
+  border-radius: 0;
+  padding-bottom: 36px;
   margin-bottom: 3rem;
+}
+
+.jumbotron-title {
+  padding-top: 24px;
 }
 
 .btn-getting-started {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-.defn-img-container {
-  text-align: center;
-}
-
-.divider {
-  margin-top: 3rem;
+.broker-info,
+.broker-features {
   margin-bottom: 3rem;
 }
 
-.broker-feature-title {
-  text-align: center;
+.broker-info-title {
   margin-bottom: 2rem;
+}
+
+.broker-info-img-container {
+  text-align: center;
+}
+
+.broker-info-img-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.broker-feature-container {
+  padding-bottom: 2rem;
 }
 
 .broker-feature {
-  margin-bottom: 2rem;
-  h3 {
-    text-align: center;
-    .broker-feature-icon {
-      margin-right: 0.5rem;
-      color: #0093d9;
-    }
+  height: 100%;
+  background-color: rgba(246, 246, 230, 0.85);
+  padding: 1rem;
+
+  .broker-feature-title {
+    margin-bottom: 1rem;
   }
 
+  .broker-feature-icon {
+    margin-right: 0.8rem;
+    color: $broker-primary-color;
+  }
+
+  .broker-feature-text {
+    margin-bottom: 0;
+  }
 }
 
-.broker-feature.broker-feature-last {
-  text-align: center;
-}
-
-.broker-bullet {
-  margin-bottom: 3rem;
-}

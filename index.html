@@ -5,32 +5,38 @@ layout: home
 <main role="main">
     <div class="jumbotron">
         <div class="container">
-            <div class="jumbotron-title">
-                <img class="jumbo-logo" src="{{ site.baseurl }}/assets/img/logo_horiz_black-text.png" alt="">
-                <!--<h5>Create managed services on Kubernetes using Ansible</h5>-->
+            <div class="row">
+                <div class="offset-lg-3 col-lg-9">
+                    <div class="jumbotron-title">
+                        <h1>Simplify the Orchestration &</h1>
+                        <h1>Management of Kubernetes Apps</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-3 col-lg-9">
+                    <a class="btn btn-lg btn-primary btn-getting-started" target="_blank"
+                       href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker"
+                       role="button">Get started &raquo;
+                    </a>
+                </div>
             </div>
 
-            <div class="jumbo-description">
-                <h4>Simple orchestration of Kubernetes applications with Ansible</h4>
-            </div>
-
-            <a class="btn btn-lg btn-primary btn-getting-started" target="_blank"
-               href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker"
-               role="button">Get started &raquo;
-            </a>
         </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="broker-info col-md-8">
+        <div class="row broker-info">
+            <div class="broker-info-text-container col-md-8">
+                <h2 class="broker-info-title">Let's make your complex services simple.</h2>
                 <p>
                     Many applications consist of multiple services, such as a database, API service, and front-end.
                     Provisioning them as a single application in <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
                     can be challenging, especially if one or more services run outside your cluster.
                 </p>
                 <p>
-                    The <strong>Ansible Broker</strong>, an implementation of the <a href="https://www.openservicebrokerapi.org/" target="_blank">Open Service Broker API</a>,
+                    <a href="https://github.com/openshift/ansible-service-broker" target="_blank">The Ansible Broker</a>, an implementation of the
+                    <a href="https://www.openservicebrokerapi.org/" target="_blank">Open Service Broker API</a>,
                     was designed to simplify orchestration and management of Kubernetes applications using a lightweight,
                     container-based application definition called an
                     <a href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle" target="_blank">Ansible Playbook Bundle (APB)</a>.
@@ -42,98 +48,112 @@ layout: home
                     (connecting multiple services together into a larger application), and updating of simple to
                     complex services running both on- or off-platform.
                 </p>
-
+            </div>
+            <div class="col-md-4 broker-info-img-container">
+                <h5 class="broker-info-img-title">Ansible Playbook Bundle (APB)</h5>
+                <img src="{{ site.baseurl }}/assets/img/apb_stack.png" alt="Ansible Playbook Bundle">
             </div>
         </div>
 
-        <hr class="divider">
+        <div class="broker-features">
+            <div class="row broker-feature-row">
+                <div class="col-md-6 broker-feature-container">
+                    <div class="broker-feature">
+                        <h5 class="broker-feature-title"><i class="fas fa-cogs broker-feature-icon"></i>Manage Complexity</h5>
+                        <p class="broker-feature-text">
+                            Model the most complex kubernetes applications/services, providing for orchestration of
+                            installation, update and teardown operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 broker-feature-container">
+                    <div class="broker-feature">
+                        <h5 class="broker-feature-title"><i class="fas fa-play-circle broker-feature-icon"></i>Automate</h5>
+                        <p class="broker-feature-text">
+                            Leverage the power of Ansible automation; allowing for the most complex orchestration steps
+                            including service dependencies, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row broker-feature-row">
+                <div class="col-md-4 broker-feature-container">
+                    <div class="broker-feature">
+                        <h5 class="broker-feature-title"><i class="fas fa-recycle broker-feature-icon"></i>Reuse</h5>
+                        <p class="broker-feature-text">
+                            Portable application definition bundled in a standard container image and a growing library
+                            of predefined services and applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 broker-feature-container">
+                    <div class="broker-feature">
+                        <h5 class="broker-feature-title"><i class="fas fa-share-alt broker-feature-icon"></i>Connect</h5>
+                        <p class="broker-feature-text">
+                            Connect your application to pre-existing services through binding operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 broker-feature-container">
+                    <div class="broker-feature">
+                        <h5 class="broker-feature-title"><i class="fas fa-cloud broker-feature-icon"></i>Hybrid</h5>
+                        <p class="broker-feature-text">
+                            Orchestrate both on- and off-platform services for truly hybrid workloads.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="row broker-feature">
-            <div class="col-md-6">
-                <h3><i class="fas fa-cogs broker-feature-icon"></i>Manage Complexity</h3>
+        <div class="row broker-more-info">
+            <div class="col-md-4">
+                <h2>Getting Started</h2>
                 <p>
-                    Model the most complex kubernetes applications/services, providing for orchestration of
-                    installation, update and teardown operations.
+                    As a developer, it's easy to get started using Ansible Broker if you have
+                    <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> up and running.
+                </p>
+                <p>
+                    We also offer a collection of Ansible playbooks called
+                    <a href="https://github.com/fusor/catasb">catasb</a>
+                    to get you up and running faster with Kubernetes or
+                    <a href="https://www.openshift.org/index.html" target="_blank">OpenShift</a>,
+                    the Service Catalog, and Ansible Broker.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker">
+                        Installation &raquo;
+                    </a>
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3><i class="fas fa-play-circle broker-feature-icon"></i>Automate</h3>
+            <div class="col-md-4">
+                <h2>Development</h2>
                 <p>
-                    Leverage the power of Ansible automation; allowing for the most complex orchestration steps
-                    including service dependencies, etc.
+                    Applications are defined using
+                    <a href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle" target="_blank">Ansible
+                        Playbook Bundles (APBs)</a>.
+                    Leverage the power of Ansible to create complex managed services for Kubernetes.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle#documentation">
+                        APBs &raquo;
+                    </a>
                 </p>
             </div>
-        </div>
-        <div class="row broker-feature">
-            <div class="col-md-6">
-                <h3><i class="fas fa-recycle broker-feature-icon"></i>Reuse</h3>
+            <div class="col-md-4">
+                <h2>Sample APBs</h2>
                 <p>
-                    Portable application definition bundled in a standard container image and a growing library of
-                    predefined services and applications.
+                    There are several sample APBs available. You can use them to deploy services or as a starting point
+                    to create your own.
+                </p>
+                <p>
+                    <a class="btn btn-primary-inverse" role="button" target="_blank"
+                       href="https://github.com/ansibleplaybookbundle?utf8=%E2%9C%93&q=-apb">
+                        Examples &raquo;
+                    </a>
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3><i class="fas fa-share-alt broker-feature-icon"></i>Connect</h3>
-                <p>
-                    Connect your application to pre-existing services through binding operations.
-                </p>
-            </div>
-        </div>
-
-        <div class="row broker-feature broker-feature-last">
-            <div class="col-md-12">
-                <h3><i class="fas fa-cloud broker-feature-icon"></i>Hybrid</h3>
-                <p>
-                    Both on- and off-cluster operations.
-                </p>
-            </div>
-        </div>
-
-        <hr class="divider">
-
-        <div class="broker-bullet">
-            <h3>Getting Started</h3>
-            <p>
-                As a developer, it's easy to get started using Ansible Broker if you have
-                <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> up and running.
-            </p>
-            <p>
-                We also offer a collection of Ansible playbooks called <a
-                    href="https://github.com/fusor/catasb">catasb</a>
-                to get you up and running faster with Kubernetes or
-                <a href="https://www.openshift.org/index.html" target="_blank">OpenShift</a>,
-                the Service Catalog, and Ansible Broker.
-            </p>
-            <p>
-                <a class="btn btn-primary-inverse" role="button" target="_blank"
-                   href="https://github.com/openshift/ansible-service-broker#getting-started-with-the-ansible-service-broker">Installation &raquo;</a>
-            </p>
-        </div>
-        <div class="broker-bullet">
-            <h3>Development</h3>
-            <p>
-                Applications are defined using
-                <a href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle" target="_blank">Ansible Playbook Bundles (APBs)</a>.
-                Leverage the power of Ansible to create complex managed services for Kubernetes.
-            </p>
-            <p>
-                <a class="btn btn-primary-inverse" role="button" target="_blank"
-                   href="https://github.com/ansibleplaybookbundle/ansible-playbook-bundle#documentation">Ansible Playbook Bundles &raquo;
-                </a>
-            </p>
-        </div>
-        <div class="broker-bullet">
-            <h3>Sample APBs</h3>
-            <p>
-                There are several sample APBs available. You can use them to deploy services or as a starting point
-                to create your own.
-            </p>
-            <p>
-                <a class="btn btn-primary-inverse" role="button" target="_blank"
-                   href="https://github.com/ansibleplaybookbundle?utf8=%E2%9C%93&q=-apb">
-                    Examples on Github &raquo;
-                </a>
-            </p>
         </div>
     </div>
 </main>

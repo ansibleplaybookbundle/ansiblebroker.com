@@ -7,8 +7,12 @@ url: "http://ansiblebroker.org"
 
 # Build settings
 markdown: kramdown
-#plugins:
-#exclude:
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - design
 
 #Social
 repo: https://github.com/openshift/ansible-service-broker
